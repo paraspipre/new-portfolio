@@ -3,9 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paras Pipre — AI/ML Engineer</title>
+
+<!-- SEO Meta Tags -->
+<title>Paras Pipre — AI/ML Engineer &amp; Data Scientist | Bangalore, India</title>
+<meta name="description" content="Portfolio of Paras Pipre — AI/ML Engineer and Data Scientist at LuLu Group International. 2+ years building predictive models, GenAI systems, and large-scale retail analytics across 6 GCC markets.">
+<meta name="keywords" content="Paras Pipre, AI Engineer, ML Engineer, Data Scientist, Machine Learning, Artificial Intelligence, Generative AI, LangChain, Databricks, PySpark, Python, Bangalore, India, LuLu Group, Retail Analytics, Deep Learning, NLP">
+<meta name="author" content="Paras Pipre">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://paraspipre.com">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Paras Pipre — AI/ML Engineer & Data Scientist">
+<meta property="og:description" content="AI/ML Engineer with 2+ years of experience building predictive models, GenAI systems, and retail analytics solutions across 6 GCC markets.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://paraspipre.com">
+<meta property="og:image" content="https://paraspipre.com/myimage.jpeg">
+<meta property="og:site_name" content="Paras Pipre Portfolio">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paras Pipre — AI/ML Engineer & Data Scientist">
+<meta name="twitter:description" content="AI/ML Engineer with 2+ years of experience building predictive models, GenAI systems, and retail analytics solutions.">
+<meta name="twitter:image" content="https://paraspipre.com/myimage.jpeg">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Paras Pipre",
+  "jobTitle": "AI/ML Engineer & Data Scientist",
+  "url": "https://paraspipre.com",
+  "image": "https://paraspipre.com/myimage.jpeg",
+  "email": "paras11917@gmail.com",
+  "telephone": "+916264625677",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN" },
+  "sameAs": [
+    "https://github.com/paraspipre",
+    "https://linkedin.com/in/paraspipre"
+  ],
+  "worksFor": { "@type": "Organization", "name": "LuLu Group International" },
+  "knowsAbout": ["Machine Learning", "Artificial Intelligence", "Data Science", "Python", "Generative AI", "LangChain", "Databricks", "PySpark", "Deep Learning", "NLP"],
+  "alumniOf": { "@type": "EducationalOrganization", "name": "RGPV" }
+}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230a0a0a' width='100' height='100' rx='20'/><text x='50' y='70' fill='%23c4a47c' font-family='serif' font-size='65' text-anchor='middle' font-weight='bold'>P</text></svg>">
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
@@ -28,7 +79,7 @@ body{background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.
 ::selection{background:var(--accent);color:var(--bg)}
 
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 3rem;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(10,10,10,.7);border-bottom:1px solid transparent;transition:border-color .3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 3rem;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(10,10,10,.85);border-bottom:1px solid transparent;transition:border-color .3s}
 nav.scrolled{border-color:var(--border)}
 .nav-logo{font-family:var(--mono);font-size:.85rem;letter-spacing:.08em;color:var(--fg-dim)}
 .nav-logo span{color:var(--accent)}
@@ -40,14 +91,21 @@ nav.scrolled{border-color:var(--border)}
 
 /* ── HERO ── */
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 3rem;max-width:1200px;margin:0 auto}
-.hero-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:2rem;opacity:0;animation:fadeUp .8s .2s forwards}
+.hero-content{display:flex;align-items:center;gap:4rem;width:100%}
+.hero-text{flex:1}
+.hero-image-wrap{flex-shrink:0;opacity:0;animation:fadeUp .8s 1s forwards}
+.hero-image{width:280px;height:280px;border-radius:50%;object-fit:cover;border:3px solid var(--border);box-shadow:0 0 40px rgba(196,164,124,.08);transition:all .5s}
+.hero-image:hover{border-color:var(--accent);box-shadow:0 0 60px rgba(196,164,124,.15);transform:scale(1.03)}
+.hero-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:2rem;opacity:0;animation:fadeUp .8s .2s forwards;display:flex;align-items:center;gap:.5rem}
+.hero-label svg{width:14px;height:14px;stroke:currentColor}
+.hero-name{font-family:var(--serif);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:400;color:var(--fg);margin-bottom:.5rem;opacity:0;animation:fadeUp .8s .3s forwards;letter-spacing:.01em}
 .hero h1{font-family:var(--serif);font-size:clamp(3rem,7vw,5.5rem);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s .4s forwards}
 .hero h1 em{font-style:italic;color:var(--accent)}
 .hero-sub{font-size:1.1rem;color:var(--fg-dim);max-width:540px;font-weight:300;line-height:1.8;opacity:0;animation:fadeUp .8s .6s forwards}
 .hero-sub strong{color:var(--fg);font-weight:500}
-.hero-meta{display:flex;gap:2rem;margin-top:3rem;opacity:0;animation:fadeUp .8s .8s forwards}
-.hero-meta a{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;color:var(--fg-dim);text-decoration:none;display:flex;align-items:center;gap:.5rem;transition:color .3s}
-.hero-meta a:hover{color:var(--accent)}
+.hero-meta{display:flex;gap:2rem;margin-top:3rem;opacity:0;animation:fadeUp .8s .8s forwards;flex-wrap:wrap}
+.hero-meta a{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;color:var(--fg-dim);text-decoration:none;display:flex;align-items:center;gap:.5rem;transition:color .3s;padding:.4rem .8rem;border:1px solid transparent;border-radius:3px}
+.hero-meta a:hover{color:var(--accent);border-color:var(--border);background:rgba(196,164,124,.03)}
 .hero-meta a svg{width:14px;height:14px;stroke:currentColor}
 .scroll-line{position:absolute;bottom:3rem;left:3rem;width:1px;height:60px;background:var(--border);opacity:0;animation:fadeIn 1s 1.2s forwards}
 .scroll-line::after{content:'';position:absolute;top:0;left:0;width:1px;height:20px;background:var(--accent);animation:scrollPulse 2s 1.5s infinite}
@@ -55,6 +113,7 @@ nav.scrolled{border-color:var(--border)}
 /* ── SECTIONS ── */
 section{padding:8rem 3rem;max-width:1200px;margin:0 auto}
 .section-label{font-family:var(--mono);font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:3rem;display:flex;align-items:center;gap:1rem}
+.section-label svg{width:16px;height:16px;stroke:var(--accent);flex-shrink:0}
 .section-label::after{content:'';flex:1;height:1px;background:var(--border)}
 .section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:400;margin-bottom:1rem;letter-spacing:-.01em}
 
@@ -65,6 +124,8 @@ section{padding:8rem 3rem;max-width:1200px;margin:0 auto}
 .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 .stat{padding:1.5rem;border:1px solid var(--border);border-radius:4px;transition:border-color .3s}
 .stat:hover{border-color:var(--accent)}
+.stat-icon{color:var(--accent);opacity:.5;margin-bottom:.75rem}
+.stat-icon svg{width:20px;height:20px}
 .stat-num{font-family:var(--serif);font-size:2rem;color:var(--accent);line-height:1}
 .stat-label{font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--fg-dim);margin-top:.5rem}
 
@@ -73,7 +134,8 @@ section{padding:8rem 3rem;max-width:1200px;margin:0 auto}
 .exp-item:first-child{border-top:1px solid var(--border)}
 .exp-date{font-family:var(--mono);font-size:.75rem;color:var(--fg-dim);letter-spacing:.05em;padding-top:.3rem}
 .exp-role{font-size:1.15rem;font-weight:500;margin-bottom:.25rem}
-.exp-company{font-family:var(--mono);font-size:.8rem;color:var(--accent);margin-bottom:1rem}
+.exp-company{font-family:var(--mono);font-size:.8rem;color:var(--accent);margin-bottom:1rem;display:flex;align-items:center;gap:.4rem}
+.exp-company svg{width:14px;height:14px;stroke:var(--accent);opacity:.6}
 .exp-desc{color:var(--fg-dim);font-weight:300;font-size:.95rem;line-height:1.8}
 .exp-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
 .exp-tags span{font-family:var(--mono);font-size:.65rem;letter-spacing:.08em;padding:.3rem .7rem;border:1px solid var(--border);border-radius:2px;color:var(--fg-dim)}
@@ -94,12 +156,26 @@ section{padding:8rem 3rem;max-width:1200px;margin:0 auto}
 .project-links a:hover{opacity:.7}
 .project-links a svg{width:12px;height:12px}
 
+/* ── VIDEOS ── */
+.video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:1.5rem}
+.video-card{border:1px solid var(--border);border-radius:6px;overflow:hidden;transition:all .4s;position:relative}
+.video-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent2),var(--accent));transform:scaleX(0);transform-origin:left;transition:transform .4s;z-index:1}
+.video-card:hover{border-color:#333;transform:translateY(-2px)}
+.video-card:hover::before{transform:scaleX(1)}
+.video-card iframe{width:100%;aspect-ratio:16/9;display:block;border:none}
+.video-info{padding:1.25rem}
+.video-title{font-family:var(--serif);font-size:1.2rem;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.video-title svg{width:16px;height:16px;stroke:var(--accent);flex-shrink:0}
+.video-desc{font-size:.85rem;color:var(--fg-dim);font-weight:300;line-height:1.7}
+
 /* ── SKILLS ── */
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.skill-group h3{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.25rem}
+.skill-group h3{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem}
+.skill-group h3 svg{width:15px;height:15px;stroke:var(--accent);opacity:.7}
 .skill-group ul{list-style:none}
-.skill-group li{font-size:.9rem;color:var(--fg-dim);font-weight:300;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.03);transition:color .3s}
+.skill-group li{font-size:.9rem;color:var(--fg-dim);font-weight:300;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.03);transition:color .3s;display:flex;align-items:center;gap:.5rem}
 .skill-group li:hover{color:var(--fg)}
+.skill-group li::before{content:'›';color:var(--accent);opacity:.4;font-size:.7rem}
 
 /* ── CONTACT ── */
 .contact-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
@@ -108,10 +184,13 @@ section{padding:8rem 3rem;max-width:1200px;margin:0 auto}
 .contact-links-list{display:flex;flex-direction:column;gap:1rem}
 .contact-link{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;border:1px solid var(--border);border-radius:4px;text-decoration:none;color:var(--fg);transition:all .3s}
 .contact-link:hover{border-color:var(--accent);background:rgba(196,164,124,.04)}
+.contact-link-left{display:flex;align-items:center;gap:1rem}
+.contact-link-icon{color:var(--accent);opacity:.6;display:flex}
+.contact-link-icon svg{width:18px;height:18px}
 .contact-link-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-dim)}
 .contact-link-val{font-size:.9rem;margin-top:.25rem}
-.contact-link svg{width:16px;height:16px;color:var(--fg-dim);transition:transform .3s}
-.contact-link:hover svg{transform:translate(3px,-3px)}
+.contact-link svg.arrow-icon{width:16px;height:16px;color:var(--fg-dim);transition:transform .3s;flex-shrink:0}
+.contact-link:hover svg.arrow-icon{transform:translate(3px,-3px)}
 
 /* ── FOOTER ── */
 footer{padding:3rem;text-align:center;border-top:1px solid var(--border)}
@@ -132,21 +211,24 @@ footer p{font-family:var(--mono);font-size:.7rem;color:var(--fg-dim);letter-spac
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
-/* ── RESPONSIVE ── */
-
-/* Tablet */
+/* ── RESPONSIVE — Tablet ── */
 @media(max-width:768px){
   nav{padding:1rem 1.5rem}
   .nav-links{gap:1.5rem}
   .hero{padding:0 1.5rem}
   .hero h1{font-size:clamp(2.2rem,6vw,3.5rem)}
   .hero-sub{font-size:1rem;line-height:1.7}
+  .hero-content{flex-direction:column-reverse;text-align:center;gap:2rem}
+  .hero-image{width:200px;height:200px}
+  .hero-meta{justify-content:center}
+  .hero-label{justify-content:center}
   section{padding:4rem 1.5rem}
   .section-label{font-size:.6rem;margin-bottom:2rem}
   .section-title{font-size:clamp(1.6rem,4vw,2.5rem)}
   .about-grid,.contact-content{grid-template-columns:1fr;gap:2.5rem}
   .about-text{font-size:.95rem;line-height:1.8}
   .projects-grid{grid-template-columns:1fr}
+  .video-grid{grid-template-columns:1fr}
   .skills-grid{grid-template-columns:1fr 1fr}
   .exp-item{grid-template-columns:1fr;gap:.5rem}
   .exp-role{font-size:1.05rem}
@@ -156,19 +238,21 @@ footer p{font-family:var(--mono);font-size:.7rem;color:var(--fg-dim);letter-spac
   footer{padding:2rem 1.5rem}
 }
 
-/* Mobile */
+/* ── RESPONSIVE — Mobile ── */
 @media(max-width:480px){
   html{font-size:15px}
-  nav{padding:.85rem 1.2rem}
+  nav{padding:.85rem 1.2rem;background:rgba(10,10,10,.97)}
   .hamburger{display:flex}
   .nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,10,10,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;opacity:0;pointer-events:none;transition:opacity .3s}
   .nav-links.open{opacity:1;pointer-events:all}
   .nav-links a{font-size:.85rem;letter-spacing:.15em}
   .hero{padding:0 1.2rem;min-height:90vh}
+  .hero-content{gap:1.5rem}
+  .hero-image{width:160px;height:160px}
   .hero-label{font-size:.6rem;letter-spacing:.15em;margin-bottom:1.5rem}
   .hero h1{font-size:clamp(2rem,8vw,2.8rem);line-height:1.15;letter-spacing:-.01em}
   .hero-sub{font-size:.9rem;line-height:1.7;max-width:100%}
-  .hero-meta{flex-direction:column;gap:.85rem;margin-top:2rem}
+  .hero-meta{flex-direction:column;gap:.6rem;margin-top:2rem;align-items:center}
   .hero-meta a{font-size:.7rem}
   section{padding:3.5rem 1.2rem}
   .section-label{font-size:.58rem;letter-spacing:.2em;margin-bottom:1.75rem}
@@ -191,6 +275,7 @@ footer p{font-family:var(--mono);font-size:.7rem;color:var(--fg-dim);letter-spac
   .project-desc{font-size:.82rem;line-height:1.65;margin-bottom:1.2rem}
   .project-tech span{font-size:.55rem;padding:.2rem .45rem}
   .project-links a{font-size:.65rem}
+  .video-grid{grid-template-columns:1fr}
   .skills-grid{grid-template-columns:1fr;gap:1.75rem}
   .skill-group h3{font-size:.65rem;margin-bottom:1rem}
   .skill-group li{font-size:.85rem;padding:.35rem 0}
@@ -203,11 +288,12 @@ footer p{font-family:var(--mono);font-size:.7rem;color:var(--fg-dim);letter-spac
   footer p{font-size:.62rem}
 }
 
-/* Small phones */
+/* ── RESPONSIVE — Small phones ── */
 @media(max-width:360px){
   html{font-size:14px}
   .hero h1{font-size:1.85rem}
   .hero-sub{font-size:.85rem}
+  .hero-image{width:120px;height:120px}
   .about-stats{grid-template-columns:1fr}
   .stat{padding:1rem}
   section{padding:3rem 1rem}
@@ -219,263 +305,418 @@ footer p{font-family:var(--mono);font-size:.7rem;color:var(--fg-dim);letter-spac
 <body>
 
 <!-- NAV -->
-<nav id="nav">
-  <div class="nav-logo">paras<span>.</span>pipre</div>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="nav-links" id="navLinks">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+<nav id="nav"></nav>
+
+<!-- MAIN CONTENT -->
+<main>
+  <section class="hero" id="hero-section" style="padding-top:0"></section>
+  <section id="about"></section>
+  <section id="experience"></section>
+  <section id="projects"></section>
+  <section id="videos"></section>
+  <section id="skills"></section>
+  <section id="contact"></section>
+</main>
+<footer id="footer"></footer>
+
+<!-- SEO: noscript fallback for crawlers -->
+<noscript>
+  <div style="padding:3rem;color:#e8e4df;background:#0a0a0a;font-family:sans-serif;max-width:800px;margin:0 auto">
+    <h1>Paras Pipre — AI/ML Engineer &amp; Data Scientist</h1>
+    <p>Data Scientist at LuLu Group International with 2+ years of experience in machine learning, generative AI, and large-scale retail analytics across 6 GCC markets.</p>
+    <p>Skills: Python, Databricks, PySpark, XGBoost, TensorFlow, PyTorch, LangChain, RAG, Stable Diffusion, React, Next.js, AWS, Docker</p>
+    <p>Contact: <a href="mailto:paras11917@gmail.com" style="color:#c4a47c">paras11917@gmail.com</a> |
+    <a href="https://github.com/paraspipre" style="color:#c4a47c">GitHub</a> |
+    <a href="https://linkedin.com/in/paraspipre" style="color:#c4a47c">LinkedIn</a> |
+    <a href="https://resume.paraspipre.com" style="color:#c4a47c">Resume</a></p>
   </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero" style="padding-top:0">
-  <div class="hero-label">AI / ML Engineer &mdash; Bangalore, India</div>
-  <h1>Building <em>intelligent</em><br>systems that learn</h1>
-  <p class="hero-sub">
-    Data Scientist at <strong>LuLu Group International</strong>, crafting predictive models, lifecycle segmentation, and personalized recommendation engines across <strong>6 GCC markets</strong> using Databricks &amp; PySpark.
-  </p>
-  <div class="hero-meta">
-    <a href="https://github.com/paraspipre" target="_blank">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-      GitHub
-    </a>
-    <a href="https://linkedin.com/in/paraspipre" target="_blank">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      LinkedIn
-    </a>
-    <a href="mailto:paras11917@gmail.com">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-      Email
-    </a>
-  </div>
-  <div class="scroll-line"></div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-label reveal">About</div>
-  <div class="about-grid">
-    <div class="about-text reveal">
-      <p>I work at the intersection of data science, machine learning, and large-scale retail analytics. At LuLu Group, I build end-to-end prediction pipelines &mdash; from churn and lapser models to SKU-level personalized flyer systems &mdash; serving millions of customers across the UAE, Saudi Arabia, Bahrain, Kuwait, Oman, and Qatar.</p>
-      <p>Beyond production ML, I'm deeply interested in Generative AI and Agentic systems. I've built projects spanning LangChain-powered interview simulators, Stable Diffusion avatar generators, and multi-agent RAG architectures. I hold a B.Tech in Information Technology and completed an AI Builder program at IIT Delhi.</p>
-    </div>
-    <div class="about-stats reveal">
-      <div class="stat">
-        <div class="stat-num">6</div>
-        <div class="stat-label">GCC Markets Served</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">9+</div>
-        <div class="stat-label">ML Models in Production</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">10+</div>
-        <div class="stat-label">AI/ML Projects</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">IIT</div>
-        <div class="stat-label">Delhi AI Builder</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-label reveal">Experience</div>
-  <div class="exp-list">
-    <div class="exp-item reveal">
-      <div class="exp-date">Aug 2025 — Present</div>
-      <div>
-        <div class="exp-role">Data Analyst</div>
-        <div class="exp-company">LuLu Group International</div>
-        <div class="exp-desc">Building churn & lapser prediction models, customer lifecycle pipelines, audience segmentation engines, and SKU-level flyer personalization systems across 6 GCC countries using Databricks, PySpark, and XGBoost.</div>
-        <div class="exp-tags">
-          <span>Databricks</span><span>PySpark</span><span>XGBoost</span><span>SQL</span><span>Python</span><span>Machine Learning</span>
-        </div>
-      </div>
-    </div>
-    <div class="exp-item reveal">
-      <div class="exp-date">Dec 2024 — Aug 2025</div>
-      <div>
-        <div class="exp-role">Software Developer</div>
-        <div class="exp-company">Sri Sri Tattva</div>
-        <div class="exp-desc">Built a cross-platform health app with live video consultations and biometric data visualization. Optimized AWS infrastructure achieving 40% cost reduction. Automated workflows using Airflow and n8n with CI/CD via GitHub Actions.</div>
-        <div class="exp-tags">
-          <span>Flutter</span><span>NestJS</span><span>AWS</span><span>Airflow</span><span>Docker</span><span>Python</span>
-        </div>
-      </div>
-    </div>
-    <div class="exp-item reveal">
-      <div class="exp-date">Mar 2023 — Jul 2023</div>
-      <div>
-        <div class="exp-role">Software Developer Intern</div>
-        <div class="exp-company">Sameep & Tapop</div>
-        <div class="exp-desc">Developed React Native components with JWT/RBAC-secured APIs supporting 5K+ users. Built a site-builder enabling 70% of non-technical users to publish live websites with 20+ reusable templates.</div>
-        <div class="exp-tags">
-          <span>React Native</span><span>Node.js</span><span>MongoDB</span><span>Firebase</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-label reveal">Selected Projects</div>
-  <div class="projects-grid">
-
-    <div class="project-card reveal">
-      <div class="project-num">01</div>
-      <div class="project-name">Interview AI</div>
-      <div class="project-desc">Interactive interview simulation platform powered by LLaMA 3 and LangChain with adaptive, context-aware question flows and voice input support.</div>
-      <div class="project-tech">
-        <span>LangChain</span><span>LLaMA 3</span><span>Next.js</span><span>TypeScript</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/paraspipre/interviewai" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> Code</a>
-        <a href="https://interviewai-xi.vercel.app/" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Demo</a>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <div class="project-num">02</div>
-      <div class="project-name">NyayMitra</div>
-      <div class="project-desc">ML/NLP-powered legal platform with personalized lawyer recommendations from FIR analysis, AI chatbot via LangChain, and real-time WebRTC communication.</div>
-      <div class="project-tech">
-        <span>LangChain</span><span>NLP</span><span>React</span><span>WebSocket</span><span>MongoDB</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/paraspipre/nyaymitra/" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> Code</a>
-        <a href="https://nyaymitra-rho.vercel.app/" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Demo</a>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <div class="project-num">03</div>
-      <div class="project-name">FotoFusion</div>
-      <div class="project-desc">AI-powered image generation platform creating personalized avatars, logos, and videos using Stable Diffusion via Hugging Face Diffusers with face-swap capabilities.</div>
-      <div class="project-tech">
-        <span>Stable Diffusion</span><span>Diffusers</span><span>FastAPI</span><span>React</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/paraspipre/avatar" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> Code</a>
-        <a href="https://fotofusion.vercel.app/" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Demo</a>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <div class="project-num">04</div>
-      <div class="project-name">DoctorAI</div>
-      <div class="project-desc">Disease detection platform using CT-Scan and MRI image analysis with TensorFlow CNN models for automated medical image evaluation.</div>
-      <div class="project-tech">
-        <span>TensorFlow</span><span>CNN</span><span>Python</span><span>TensorFlow.js</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/paraspipre/doctor-ai" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> Code</a>
-        <a href="https://paras11917.github.io/doctor-ai-html/" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Demo</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-label reveal">Technical Skills</div>
-  <div class="skills-grid reveal">
-    <div class="skill-group">
-      <h3>ML &amp; AI</h3>
-      <ul>
-        <li>Databricks / PySpark</li>
-        <li>XGBoost / Scikit-learn</li>
-        <li>TensorFlow / PyTorch</li>
-        <li>Pandas / NumPy</li>
-        <li>Matplotlib / Seaborn</li>
-        <li>Optuna (HPO)</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <h3>Generative AI</h3>
-      <ul>
-        <li>LangChain / LangGraph</li>
-        <li>RAG Systems</li>
-        <li>Agentic AI</li>
-        <li>Stable Diffusion / Diffusers</li>
-        <li>Vector Databases</li>
-        <li>Hugging Face</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <h3>Engineering</h3>
-      <ul>
-        <li>Python / SQL / C++</li>
-        <li>React / Next.js / Node.js</li>
-        <li>FastAPI / Flask</li>
-        <li>AWS (ECS, Lambda, S3)</li>
-        <li>Docker / Airflow</li>
-        <li>Git / CI-CD</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-label reveal">Contact</div>
-  <div class="contact-content">
-    <div class="contact-heading reveal">Let's build<br>something<br><em>remarkable.</em></div>
-    <div class="contact-links-list reveal">
-      <a class="contact-link" href="mailto:paras11917@gmail.com">
-        <div>
-          <div class="contact-link-label">Email</div>
-          <div class="contact-link-val">paras11917@gmail.com</div>
-        </div>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H7m10 0v10"/></svg>
-      </a>
-      <a class="contact-link" href="https://github.com/paraspipre" target="_blank">
-        <div>
-          <div class="contact-link-label">GitHub</div>
-          <div class="contact-link-val">github.com/paraspipre</div>
-        </div>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H7m10 0v10"/></svg>
-      </a>
-      <a class="contact-link" href="https://linkedin.com/in/paraspipre" target="_blank">
-        <div>
-          <div class="contact-link-label">LinkedIn</div>
-          <div class="contact-link-val">linkedin.com/in/paraspipre</div>
-        </div>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H7m10 0v10"/></svg>
-      </a>
-      <a class="contact-link" href="tel:+916264625677">
-        <div>
-          <div class="contact-link-label">Phone</div>
-          <div class="contact-link-val">+91 6264625677</div>
-        </div>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H7m10 0v10"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2026 Paras Pipre. Crafted with intention.</p>
-</footer>
+</noscript>
 
 <script>
-// Nav scroll effect
+/* ════════════════════════════════════════════════════════════════
+   PORTFOLIO DATA — Edit this section to update your portfolio.
+   All content is driven from this single object.
+   ════════════════════════════════════════════════════════════════ */
+
+const SITE = {
+
+  // ── Personal Info ──
+  name: "Paras Pipre",
+  firstName: "paras",
+  lastName: "pipre",
+  title: "AI / ML Engineer",
+  location: "Bangalore, India",
+  tagline: 'Building <em>intelligent</em><br>systems that learn',
+  bio: 'Data Scientist at <strong>LuLu Group International</strong>, crafting predictive models, lifecycle segmentation, and personalized recommendation engines across <strong>6 GCC markets</strong> using Databricks &amp; PySpark.',
+  image: "myimage.jpeg",
+
+  // ── Links & Contact ──
+  email: "paras11917@gmail.com",
+  phone: "+91 6264625677",
+  github: "https://github.com/paraspipre",
+  linkedin: "https://linkedin.com/in/paraspipre",
+  resume: "https://resume.paraspipre.com",
+
+  // ── Navigation — add/remove section names to control nav links ──
+  navSections: ["About", "Experience", "Projects", "Videos", "Skills", "Contact"],
+
+  // ── About ──
+  aboutParagraphs: [
+    'I work at the intersection of data science, machine learning, and large-scale retail analytics. At LuLu Group, I build end-to-end prediction pipelines &mdash; from churn and lapser models to SKU-level personalized flyer systems &mdash; serving millions of customers across the UAE, Saudi Arabia, Bahrain, Kuwait, Oman, and Qatar.',
+    'Beyond production ML, I\'m deeply interested in Generative AI and Agentic systems. I\'ve built projects spanning LangChain-powered interview simulators, Stable Diffusion avatar generators, and multi-agent RAG architectures. I hold a B.Tech in Information Technology.'
+  ],
+
+  stats: [
+    { num: "2+",  label: "Years of Experience",     icon: "calendar" },
+    { num: "9+",  label: "ML Models in Production",  icon: "cpu" },
+    { num: "6",   label: "GCC Markets Served",       icon: "globe" },
+    { num: "10+", label: "AI/ML Projects",            icon: "rocket" },
+  ],
+
+  // ── Experience — add/remove/reorder objects here ──
+  experience: [
+    {
+      date: "Aug 2025 — Present",
+      role: "Data Analyst",
+      company: "LuLu Group International",
+      icon: "briefcase",
+      desc: "Building churn &amp; lapser prediction models, customer lifecycle pipelines, audience segmentation engines, and SKU-level flyer personalization systems across 6 GCC countries using Databricks, PySpark, and XGBoost.",
+      tags: ["Databricks", "PySpark", "XGBoost", "SQL", "Python", "Machine Learning"]
+    },
+    {
+      date: "Dec 2024 — Aug 2025",
+      role: "Software Developer",
+      company: "Sri Sri Tattva",
+      icon: "code",
+      desc: "Built a cross-platform health app with live video consultations and biometric data visualization. Optimized AWS infrastructure achieving 40% cost reduction. Automated workflows using Airflow and n8n with CI/CD via GitHub Actions.",
+      tags: ["Flutter", "NestJS", "AWS", "Airflow", "Docker", "Python"]
+    },
+    {
+      date: "May 2023 — Jul 2023",
+      role: "App Developer Intern",
+      company: "Sameep",
+      icon: "smartphone",
+      desc: "Developed React Native mobile app components with JWT and RBAC-secured REST APIs supporting 5K+ concurrent users with real-time data synchronization.",
+      tags: ["React Native", "Node.js", "JWT", "MongoDB"]
+    },
+    {
+      date: "Mar 2023 — May 2023",
+      role: "Full Stack Developer Intern",
+      company: "Tapop",
+      icon: "layers",
+      desc: "Built a no-code site-builder platform enabling 70% of non-technical users to publish live websites with 20+ reusable drag-and-drop templates and real-time preview.",
+      tags: ["React", "Node.js", "MongoDB", "Firebase"]
+    }
+  ],
+
+  // ── Projects — add/remove/reorder objects here ──
+  projects: [
+    {
+      name: "RetailMind",
+      desc: "AI-powered retail analytics platform with customer segmentation, demand forecasting, and personalized recommendation engines for multi-market retail operations.",
+      tech: ["Python", "XGBoost", "PySpark", "Databricks", "SQL"],
+      github: "https://github.com/paraspipre/retailmind",
+      demo: ""
+    },
+    {
+      name: "Interview AI",
+      desc: "Interactive interview simulation platform powered by LLaMA 3 and LangChain with adaptive, context-aware question flows and voice input support.",
+      tech: ["LangChain", "LLaMA 3", "Next.js", "TypeScript"],
+      github: "https://github.com/paraspipre/interviewai",
+      demo: "https://interviewai-xi.vercel.app/"
+    },
+    {
+      name: "NyayMitra",
+      desc: "ML/NLP-powered legal platform with personalized lawyer recommendations from FIR analysis, AI chatbot via LangChain, and real-time WebRTC communication.",
+      tech: ["LangChain", "NLP", "React", "WebSocket", "MongoDB"],
+      github: "https://github.com/paraspipre/nyaymitra/",
+      demo: "https://nyaymitra-rho.vercel.app/"
+    },
+    {
+      name: "FotoFusion",
+      desc: "AI-powered image generation platform creating personalized avatars, logos, and videos using Stable Diffusion via Hugging Face Diffusers with face-swap capabilities.",
+      tech: ["Stable Diffusion", "Diffusers", "FastAPI", "React"],
+      github: "https://github.com/paraspipre/avatar",
+      demo: "https://fotofusion.vercel.app/"
+    }
+  ],
+
+  // ── Videos — add new videos by adding { title, youtubeId, description } ──
+  videos: [
+    {
+      title: "AI Generated Video",
+      youtubeId: "f2kEKHV3Ml8",
+      description: "Exploring AI-powered video generation techniques and creative applications."
+    }
+    // To add more videos, just add objects here:
+    // { title: "Video Title", youtubeId: "VIDEO_ID_HERE", description: "Short description." },
+  ],
+
+  // ── Skills — add/remove categories or items ──
+  skills: [
+    {
+      category: "ML & AI",
+      icon: "brain",
+      items: ["Databricks / PySpark", "XGBoost / Scikit-learn", "TensorFlow / PyTorch", "Pandas / NumPy", "Matplotlib / Seaborn", "Optuna (HPO)"]
+    },
+    {
+      category: "Generative AI",
+      icon: "sparkle",
+      items: ["LangChain / LangGraph", "RAG Systems", "Agentic AI", "Stable Diffusion / Diffusers", "Vector Databases", "Hugging Face"]
+    },
+    {
+      category: "Engineering",
+      icon: "wrench",
+      items: ["Python / SQL / C++", "React / Next.js / Node.js", "FastAPI / Flask", "AWS (ECS, Lambda, S3)", "Docker / Airflow", "Git / CI-CD"]
+    }
+  ],
+
+  // ── Contact Links — shown in the contact section ──
+  contactLinks: [
+    { label: "Email",    value: "paras11917@gmail.com",       href: "mailto:paras11917@gmail.com",       icon: "email" },
+    { label: "Resume",   value: "resume.paraspipre.com",      href: "https://resume.paraspipre.com",     icon: "resume" },
+    { label: "GitHub",   value: "github.com/paraspipre",      href: "https://github.com/paraspipre",     icon: "github" },
+    { label: "LinkedIn", value: "linkedin.com/in/paraspipre", href: "https://linkedin.com/in/paraspipre", icon: "linkedin" },
+    { label: "Phone",    value: "+91 6264625677",             href: "tel:+916264625677",                  icon: "phone" },
+  ]
+};
+
+/* ════════════════════════════════════════════════════════════════
+   SVG ICONS — Reusable icon library
+   ════════════════════════════════════════════════════════════════ */
+
+const ICONS = {
+  github:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>',
+  linkedin:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
+  email:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>',
+  resume:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+  phone:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  external:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>',
+  arrow:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="arrow-icon"><path d="M7 17 17 7M17 7H7m10 0v10"/></svg>',
+  globe:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+  brain:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 2A5.5 5.5 0 0 0 4 7.5c0 1.58.67 3 1.74 4.01A4.5 4.5 0 0 0 4 15.5 4.5 4.5 0 0 0 8.5 20H12V2z"/><path d="M14.5 2A5.5 5.5 0 0 1 20 7.5c0 1.58-.67 3-1.74 4.01A4.5 4.5 0 0 1 20 15.5a4.5 4.5 0 0 1-4.5 4.5H12V2z"/></svg>',
+  sparkle:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg>',
+  wrench:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+  calendar:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+  cpu:        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>',
+  rocket:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>',
+  briefcase:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>',
+  code:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+  layers:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
+  smartphone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>',
+  location:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  play:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>',
+  youtube:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>',
+  user:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+};
+
+/* Section label icons mapped to nav section names */
+const SECTION_ICONS = {
+  About: "user",
+  Experience: "briefcase",
+  Projects: "rocket",
+  Videos: "youtube",
+  Skills: "cpu",
+  Contact: "email",
+};
+
+/* ════════════════════════════════════════════════════════════════
+   RENDER ENGINE — No need to edit below this line
+   ════════════════════════════════════════════════════════════════ */
+
+function renderNav() {
+  document.getElementById('nav').innerHTML = `
+    <div class="nav-logo">${SITE.firstName}<span>.</span>${SITE.lastName}</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      ${SITE.navSections.map(s => `<a href="#${s.toLowerCase()}">${s}</a>`).join('')}
+    </div>
+  `;
+}
+
+function renderHero() {
+  document.getElementById('hero-section').innerHTML = `
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-label">${ICONS.location} ${SITE.title} &mdash; ${SITE.location}</div>
+        <h1>${SITE.tagline}</h1>
+        <p class="hero-sub">${SITE.bio}</p>
+        <div class="hero-meta">
+          <a href="${SITE.github}" target="_blank" rel="noopener noreferrer">${ICONS.github} GitHub</a>
+          <a href="${SITE.linkedin}" target="_blank" rel="noopener noreferrer">${ICONS.linkedin} LinkedIn</a>
+          <a href="mailto:${SITE.email}">${ICONS.email} Email</a>
+          <a href="${SITE.resume}" target="_blank" rel="noopener noreferrer">${ICONS.resume} Resume</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="${SITE.image}" alt="${SITE.name} — ${SITE.title}" width="240" height="240" loading="eager">
+      </div>
+    </div>
+    <div class="scroll-line"></div>
+  `;
+}
+
+function renderAbout() {
+  document.getElementById('about').innerHTML = `
+    <div class="section-label reveal">${ICONS[SECTION_ICONS.About]} About</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        ${SITE.aboutParagraphs.map(p => `<p>${p}</p>`).join('')}
+      </div>
+      <div class="about-stats reveal">
+        ${SITE.stats.map(s => `
+          <div class="stat">
+            <div class="stat-icon">${ICONS[s.icon] || ''}</div>
+            <div class="stat-num">${s.num}</div>
+            <div class="stat-label">${s.label}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderExperience() {
+  document.getElementById('experience').innerHTML = `
+    <div class="section-label reveal">${ICONS[SECTION_ICONS.Experience]} Experience</div>
+    <div class="exp-list">
+      ${SITE.experience.map(exp => `
+        <div class="exp-item reveal">
+          <div class="exp-date">${exp.date}</div>
+          <div>
+            <div class="exp-role">${exp.role}</div>
+            <div class="exp-company">${ICONS[exp.icon] || ''} ${exp.company}</div>
+            <div class="exp-desc">${exp.desc}</div>
+            <div class="exp-tags">
+              ${exp.tags.map(t => `<span>${t}</span>`).join('')}
+            </div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderProjects() {
+  document.getElementById('projects').innerHTML = `
+    <div class="section-label reveal">${ICONS[SECTION_ICONS.Projects]} Selected Projects</div>
+    <div class="projects-grid">
+      ${SITE.projects.map((p, i) => `
+        <div class="project-card reveal">
+          <div class="project-num">${String(i + 1).padStart(2, '0')}</div>
+          <div class="project-name">${p.name}</div>
+          <div class="project-desc">${p.desc}</div>
+          <div class="project-tech">
+            ${p.tech.map(t => `<span>${t}</span>`).join('')}
+          </div>
+          <div class="project-links">
+            ${p.github ? `<a href="${p.github}" target="_blank" rel="noopener noreferrer">${ICONS.github} Code</a>` : ''}
+            ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener noreferrer">${ICONS.external} Demo</a>` : ''}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderVideos() {
+  const section = document.getElementById('videos');
+  if (SITE.videos.length === 0) { section.style.display = 'none'; return; }
+  section.innerHTML = `
+    <div class="section-label reveal">${ICONS[SECTION_ICONS.Videos]} Videos</div>
+    <div class="video-grid">
+      ${SITE.videos.map(v => `
+        <div class="video-card reveal">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/${v.youtubeId}"
+            title="${v.title}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+          <div class="video-info">
+            <div class="video-title">${ICONS.play} ${v.title}</div>
+            <div class="video-desc">${v.description}</div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderSkills() {
+  document.getElementById('skills').innerHTML = `
+    <div class="section-label reveal">${ICONS[SECTION_ICONS.Skills]} Technical Skills</div>
+    <div class="skills-grid reveal">
+      ${SITE.skills.map(g => `
+        <div class="skill-group">
+          <h3>${ICONS[g.icon] || ''} ${g.category}</h3>
+          <ul>
+            ${g.items.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderContact() {
+  document.getElementById('contact').innerHTML = `
+    <div class="section-label reveal">${ICONS[SECTION_ICONS.Contact]} Contact</div>
+    <div class="contact-content">
+      <div class="contact-heading reveal">Let's build<br>something<br><em>remarkable.</em></div>
+      <div class="contact-links-list reveal">
+        ${SITE.contactLinks.map(c => {
+          const isExternal = c.href.startsWith('http');
+          return `
+            <a class="contact-link" href="${c.href}" ${isExternal ? 'target="_blank" rel="noopener noreferrer"' : ''}>
+              <div class="contact-link-left">
+                <div class="contact-link-icon">${ICONS[c.icon] || ''}</div>
+                <div>
+                  <div class="contact-link-label">${c.label}</div>
+                  <div class="contact-link-val">${c.value}</div>
+                </div>
+              </div>
+              ${ICONS.arrow}
+            </a>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderFooter() {
+  document.getElementById('footer').innerHTML = `
+    <p>&copy; ${new Date().getFullYear()} ${SITE.name}. Crafted with intention.</p>
+  `;
+}
+
+/* ── Render everything ── */
+function renderAll() {
+  renderNav();
+  renderHero();
+  renderAbout();
+  renderExperience();
+  renderProjects();
+  renderVideos();
+  renderSkills();
+  renderContact();
+  renderFooter();
+}
+
+/* ── Initialize ── */
+renderAll();
+
+/* ── Nav scroll effect ── */
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// Reveal on scroll
+/* ── Reveal on scroll ── */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -487,7 +728,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Hamburger menu
+/* ── Hamburger menu ── */
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
@@ -496,14 +737,15 @@ hamburger.addEventListener('click', () => {
   document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
 });
 
-// Smooth scroll for nav links
+/* ── Smooth scroll for nav links ── */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
     hamburger.classList.remove('active');
     navLinks.classList.remove('open');
     document.body.style.overflow = '';
-    document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
   });
 });
 </script>
